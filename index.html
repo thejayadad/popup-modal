@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        #box {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+         }
+        #info{
+            height: 100px;
+            width: 200px;
+            text-align: center;
+            z-index: 1;
+            background: lightgray;
+            padding: 20px;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+      
+        }
+        #close {
+            float: right;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>Popup Box</p>
+    <div id="box">
+        <div id="info">
+            <span id="close">X</span>
+            <p>Thanks for Watching</p>
+        </div>
+    </div>
+    <button id="btn">Click</button>
+   
+    <script src="main.js">
+    </script>
+</body>
+</html>
